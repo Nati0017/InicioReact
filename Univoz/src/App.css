@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container-fluid{
+    padding: 0;
+
+}
+
+
+.navbar {
+    background-color: #83259bc2; 
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+    
+.navbar .logo {
+        font-size: 30px;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.884);
+        text-decoration: none;
+        padding-left: 10px;
+      }
+
+
+.navbar .search-bar {
+    width: 60%;
+    padding: 8px;
+    border-radius: 16px;
+    border: none;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.74);
+    margin: 0 30px; /* Añadido margen para separar del logo y el botón */
+}
+
+.create-post{
+    background-color: #72077B !important; 
+    border-radius: 20px !important;
+    padding: 7px 20px !important;
+    color: #fcfafa !important;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    
+    
+}
+
+.create-post:hover {
+    background-color: #9a0992 !important;
+}
+
+/* Contenedor principal */
+.container {
+    display:contents;
+}
+
+.sidebar {
+    position: absolute;
+    padding: 20px;
+    background-color: #ffffff;
+    height: 500vh;
+    max-width: fit-content; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar .menu ul li {
+    margin: 10px 0;
+}
+
+.sidebar .menu ul li a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar .menu ul li.active a {
+    background-color: #d6c1e7;
+    color: #333;
+    font-weight: bold;
+    border-left: 4px solid #6a1b9a;
+}
+
+.sidebar .menu ul li a:hover {
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+.sidebar .menu ul li a i {
+    margin-right: 10px;
+}
+
+.content {
+    background-color: #f5f5f5;
+    width: 500vh; 
+    padding: 20px;
+    overflow-y: auto; /* Para permitir desplazamiento si el contenido es largo */
+}
+
+
+
+.sidebar-der {
+    margin: 3px;
+    padding: 6px;
+    border: 1px solid #72077B !important;
+    background-color: white;
+    color: black;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    min-height: 300px;
+    border-radius: 15px;    
+}
+
+.sidebar-der h5, .sidebar-der h6 {
+    margin-bottom: 16px;
+}
+
+.sidebar-der h5 {
+    border-bottom: 3px solid #84259B; /* Línea morada debajo del título */
+    padding-bottom: 10px; /* Espacio entre el texto y la línea */
+}
+
+.sidebar-der h6 {
+    border-bottom: 1px solid #84259B; /* Línea morada debajo de los párrafos */
+    padding-bottom: 10px; /* Espacio entre el texto y la línea */
+}
+
+/* Último párrafo sin línea inferior */
+.sidebar-der h6:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+@media (max-width: 768px){
+    .sidebar-display{
+        display: none;
+    }
+
+    .card {
+        margin-right: 20px;
+    }
+}
+
+
+
+@media (min-width:769px){
+    .sidebar2 {
+        position: absolute; 
+        background-color: white; 
+        width: 300px;  
+        height:500px;  
+        right: 0;
+        padding: 20px ;
+        box-shadow: 2px rgba(0, 0, 0, 0.1);
+    }
+}
+
+body {
+    background: rgba(247, 244, 244, 0.349);
+  }
+  
+  .card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    font-weight: bold;
+    padding: 0.75rem 1.25rem;
+    /* Eliminamos el ancho y la altura fijos */
+  }
+  
+  
+  .card-pub {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: auto;
+  }
+
+
+  .cardprincipal.border-light.mb-3.social-comment {
+    max-width: auto;
+    margin:  auto; /* Centramos horizontalmente */
+    border-radius: 0.90rem;
+    padding: 0.75rem 1.25rem;
+
+  }
+
+  .card {
+    margin-right: 20px;
+  }
+  
+
+  
+  .badge {
+    background-color: #AE9DD0 !important;
+    font-size: 15px ;
+    font-weight: normal;
+    margin-right: 5px;
+
+  }
+
+
+  .badge:hover{
+    background-color: #D3C0FA !important;
+  }
+ 
+
+  .col-md-9 {
+    margin-top: 80px; /* Ajustamos el margen superior para evitar que se superponga con la barra de navegación */
+  }
+  
+
+ #boton-crear{
+    border: #131213;
+   background-color: #71077ba6 !important;
+   color: #f8f9fa;
+   border-radius: 10px;
+   font-weight: 400 ;
+  }
+  
+
+  #boton-crear:hover{
+background-color: #B42789 !important;
+  }
+
+  #boton-publicar{
+    background-color: #71077ba6 !important ;
+    border-bottom: none ;
+
+     
+  }
+  #boton-publicar:hover{
+    background-color:#B42789 !important;
+  }
+
