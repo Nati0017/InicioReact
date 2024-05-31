@@ -1,4 +1,5 @@
 import React from "react";
+import Img from "/public/img/Img.jpg";
 
 const Cards = () => {
   return (
@@ -112,7 +113,7 @@ const Cards = () => {
             oportunidad de prosperar y contribuir plenamente.🌈
           </p>
           <br />
-          <div> <img src="" alt="" /></div>
+           <div><img className= "imagen" src={Img} /></div>
           <span className="badge rounded-pill ">NEURODIVERSIDAD</span>
           <span className="badge rounded-pill ">DIFERENCIAS</span>
           <span className="badge rounded-pill ">SOCIEDAD INCLUSIVA</span>
