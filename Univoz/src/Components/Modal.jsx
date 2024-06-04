@@ -26,6 +26,9 @@ const Modal = () => {
                 // Aquí puedes enviar los datos a tu backend o realizar cualquier otra acción
                 console.log(message);
                 console.log(tag);
+                // Limpiar los inputs
+                messageRef.current.value = '';
+                tagRef.current.value = '';
                 // Otra acción aquí...
                 Swal.fire('Publicado!', 'Tu publicación ha sido publicada.', 'success');
             }
