@@ -4,7 +4,7 @@ import Modal from "./Modal"
 const Crearpub = () => {
     return (
         <>
-            <div class="col-12 col-md-5 col-xl-7 col-xxl-8">
+            <div className="col-12 col-md-5 col-xl-7 col-xxl-8">
                 <div className="container">
                     <button
                         id="boton-crear"

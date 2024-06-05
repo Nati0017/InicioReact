@@ -5,15 +5,15 @@ const SideBar = () => {
 
     return (
         <>
-            <div class="row">
-                <div class="col-2 col-md-3 col-xl-2 col-xxl-2 sidebar-display">
-                    <nav class="sidebar"  >
-                        <div class="menu">
+            <div className="row">
+                <div className="col-2 col-md-3 col-xl-2 col-xxl-2 sidebar-display">
+                    <nav className="sidebar"  >
+                        <div className="menu">
                             <ul>
-                                <li class="list-group-item active"><a href="#"><i class="fas fa-house"></i> Inicio</a></li>
-                                <li class="list-group-item"><a href="#"><i class="fas fa-circle-info"></i> Información</a>
+                                <li className="list-group-item active"><a href="#"><i className="fas fa-house"></i> Inicio</a></li>
+                                <li className="list-group-item"><a href="#"><i className="fas fa-circle-info"></i> Información</a>
                                 </li>
-                                <li class="list-group-item"><a href="#"><i class="fas fa-person"></i> Quiénes Somos</a></li>
+                                <li className="list-group-item"><a href="#"><i className="fas fa-person"></i> Quiénes Somos</a></li>
                             </ul>
                         </div>
                     </nav>

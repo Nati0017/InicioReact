@@ -5,8 +5,8 @@ const SideBar2 = () => {
 
     return (
         <>
-            <div class="row">
-            <div class="col-12 col-md-4 col-xl-3 col-xxl-2">
+            <div className="row">
+            <div className="col-12 col-md-4 col-xl-3 col-xxl-2">
                     <nav className="sidebar2" >
                         <div className="card sidebar-der mb-2">
                             <div className="card-body ">

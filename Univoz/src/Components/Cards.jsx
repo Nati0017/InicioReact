@@ -36,7 +36,7 @@ const Cards = () => {
           <span className="badge rounded-pill ">ADULTOS</span>
           <span className="badge rounded-pill ">INCLUSIÓN</span>
         </div>
-      </div>{" "}
+      </div>
       <br />
       <div className="card cardprincipal">
         <div className="card-body card-pub">
@@ -65,7 +65,7 @@ const Cards = () => {
           <span className="badge rounded-pill ">DEPORTE</span>
           <span className="badge rounded-pill ">AUTISMO</span>
         </div>
-      </div>{" "}
+      </div>
       <br />
       <div className="card cardprincipal">
         <div className="card-body card-pub">
@@ -93,7 +93,7 @@ const Cards = () => {
           <span className="badge rounded-pill ">ACCESIBILIDAD</span>
           <span className="badge rounded-pill ">MOTRICIDAD</span>
         </div>
-      </div>{" "}
+      </div>
       <br />
       <div className="card cardprincipal">
         <div className="card-body card-pub">
@@ -118,7 +118,7 @@ const Cards = () => {
           <span className="badge rounded-pill ">DIFERENCIAS</span>
           <span className="badge rounded-pill ">SOCIEDAD INCLUSIVA</span>
         </div>
-      </div>{" "}
+      </div>
       <br />
     </>
   );

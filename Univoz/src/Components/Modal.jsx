@@ -3,14 +3,16 @@ import Swal from 'sweetalert2';
 
 const Modal = () => {
   // Crear estados para los inputs
+  const [title, setTitle] = useState('');
   const [message, setMessage] = useState('');
   const [tag, setTag] = useState('');
+  
 
   // useEffect para realizar una acción cuando se actualicen los estados
   useEffect(() => {
     // Puedes realizar alguna acción cada vez que los estados cambien
-    // console.log("Message or Tag updated:", { message, tag });
-  }, [message, tag]);
+    
+  }, [title, message, tag]);
 
   // Función para manejar el clic del botón Publicar
   const handlePublish = () => {
@@ -27,9 +29,11 @@ const Modal = () => {
       // Si el usuario confirma la publicación, guarda los datos
       if (result.isConfirmed) {
         // Aquí puedes enviar los datos a tu backend o realizar cualquier otra acción
+        console.log(title);
         console.log(message);
         console.log(tag);
         // Limpiar los inputs
+        setTitle('');
         setMessage('');
         setTag('');
         // Otra acción aquí...
@@ -44,13 +48,23 @@ const Modal = () => {
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
-              <h1 className="modal-title fs-5" id="exampleModalLabel">Nueva publicación</h1>
+              <h1 className="modal-title fs-5" id="exampleModalLabel">Nueva publicación✨</h1>
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
               <form>
+              <div className="mb-3">
+                  <label htmlFor="title-text" className="col-form-label">Título *</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="title-text"
+                    value={title}
+                    onChange={(e) => setTitle(e.target.value)}
+                  />
+                </div>
                 <div className="mb-3">
-                  <label htmlFor="message-text" className="col-form-label">¿Qué estás pensando? *</label>
+                  <label htmlFor="message-text" className="col-form-label">¿Qué quieres escribir? *</label>
                   <textarea
                     className="form-control"
                     id="message-text"
