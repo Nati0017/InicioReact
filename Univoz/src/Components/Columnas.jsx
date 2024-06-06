@@ -1,5 +1,6 @@
 import Cards from "./Cards"
 import Crearpub from "./Crearpub"
+import Normativas from "./Normativas"
 import Publicaciones from "./Publicaciones"
 import SideBar from "./SideBar"
 import SideBar2 from "./Sidebar2"
@@ -20,7 +21,7 @@ function Columnas () {
 
                 <div className="col-12 col-md-5 col-xl-7 col-xxl-8">
                     <Crearpub/>
-                    <Publicaciones />
+                    <Publicaciones/>
                 </div>
 
                 <div className="col-12 col-md-4 col-xl-3 col-xxl-2">

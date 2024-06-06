@@ -6,7 +6,7 @@ function Navbar() {
 
     
         <div className="row">
-            <div class="col-12">
+            <div className="col-12">
                 <nav className="navbar">
                     <a href="#" className="logo">UNIVOZ</a> {/* Logo */}
                     <input type="text" className="search-bar" placeholder="Buscar en Univoz..." /> {/* Search bar */}

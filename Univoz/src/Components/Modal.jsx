@@ -7,7 +7,6 @@ const Modal = () => {
   const [message, setMessage] = useState('');
   const [tag, setTag] = useState('');
   
-
   // useEffect para realizar una acción cuando se actualicen los estados
   useEffect(() => {
     // Puedes realizar alguna acción cada vez que los estados cambien
@@ -16,6 +15,17 @@ const Modal = () => {
 
   // Función para manejar el clic del botón Publicar
   const handlePublish = () => {
+    // Validar que todos los campos estén llenos
+    if (!title || !message || !tag) {
+      Swal.fire({
+        title: 'Error',
+        text: 'Todos los campos son obligatorios',
+        icon: 'error',
+        confirmButtonText: 'OK'
+      });
+      return;
+    }
+
     // Mostrar la alerta de confirmación usando SweetAlert2
     Swal.fire({
       title: 'Confirmar publicación',
@@ -53,7 +63,7 @@ const Modal = () => {
             </div>
             <div className="modal-body">
               <form>
-              <div className="mb-3">
+                <div className="mb-3">
                   <label htmlFor="title-text" className="col-form-label">Título *</label>
                   <input
                     type="text"

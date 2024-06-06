@@ -36,7 +36,7 @@ body {
     border: none;
     font-size: 16px;
     background-color: rgba(255, 255, 255, 0.74);
-    margin: 0 30px; /* Añadido margen para separar del logo y el botón */
+    margin: 0 30px; 
 }
 
 .create-post{
@@ -55,10 +55,8 @@ body {
     background-color: #9a0992 !important;
 }
 
-/* Contenedor principal */
-.container {
-    display:contents;
-}
+
+
 
 .sidebar {
     position: absolute;
@@ -107,12 +105,12 @@ body {
     background-color: #f5f5f5;
     width: 66.66%; 
     padding: 20px;
-    overflow-y: auto; /* Para permitir desplazamiento si el contenido es largo */
+    overflow-y: auto; 
 }
 
 
 
-.sidebar-der {
+ .sidebar-der {
     margin: 3px;
     padding: 6px;
     border: 1px solid #72077B !important;
@@ -121,41 +119,33 @@ body {
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
     min-height: 300px;
     border-radius: 15px;    
-}
+} 
 
 .sidebar-der h5, .sidebar-der h6 {
     margin-bottom: 16px;
-}
+} 
 
-.sidebar-der h5 {
-    border-bottom: 3px solid #84259B; /* Línea morada debajo del título */
-    padding-bottom: 10px; /* Espacio entre el texto y la línea */
+ .sidebar-der h5 {
+    border-bottom: 3px solid #84259B; 
+    padding-bottom: 10px; 
 }
 
 .sidebar-der h6 {
-    border-bottom: 1px solid #84259B; /* Línea morada debajo de los párrafos */
-    padding-bottom: 10px; /* Espacio entre el texto y la línea */
+    border-bottom: 1px solid #84259B; 
+    padding-bottom: 10px; 
 }
 
-/* Último párrafo sin línea inferior */
+
 .sidebar-der h6:last-child {
     border-bottom: none;
     padding-bottom: 0;
-}
-
-@media (max-width: 768px){
-    .sidebar-display{
-        display: none;
-    }
-
-    .card {
-        margin-right: 20px;
-    }
-}
+} 
 
 
 
-@media (min-width:769px){
+
+
+ @media (min-width:769px){
     .sidebar2 {
         position: absolute; 
         background-color: white; 
@@ -165,41 +155,53 @@ body {
         padding: 20px ;
         box-shadow: 2px rgba(0, 0, 0, 0.1);
     }
-}
+} 
 
-body {
-    background: rgba(247, 244, 244, 0.349);
-  }
+
   
-  .card-header {
-    background-color: #f8f9fa;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-    font-weight: bold;
-    padding: 0.75rem 1.25rem;
-    /* Eliminamos el ancho y la altura fijos */
-  }
-  
-  
-  .card-pub {
+   .card-pub {
     font-size: 16px;
     line-height: 1.6;
     text-align: justify;
     margin: auto;
-  }
+  } 
+
+  @media (max-width: 768px){
+     .sidebar-display{
+        display: none;
+    } 
+
+    .card {
+        margin-right: 20px;
+    }
+}
 
 
-  .cardprincipal.border-light.mb-3.social-comment {
+  #tarjePrincipal{
     max-width: auto;
-    margin:  auto; /* Centramos horizontalmente */
-    border-radius: 0.90rem;
-    padding: 0.75rem 1.25rem;
+    margin:  auto; 
+    padding:  1.25rem;
+    border: 0;
+    
+    
+  
+  }
+
+  #tarjeta{
+    
+  border-width: 1px;
+  border-color: rgba(84, 65, 65, 0.541);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(88, 88, 93, 0.221);
+  backdrop-filter: blur(30px);
+ 
 
   }
 
-  .card {
+  /* .card {
     margin-right: 20px;
   }
-  
+   */
 
   
   .badge {
@@ -216,13 +218,16 @@ body {
   }
  
 
-  .col-md-9 {
-    margin-top: 80px; /* Ajustamos el margen superior para evitar que se superponga con la barra de navegación */
+  /* .col-md-9 {
+    margin-top: 80px;
   }
-  
+   */
+   #cajabotoncrear{
+    display:contents;
+}
 
  #boton-crear{
-    border: #131213;
+    border:0;
    background-color: #71077ba6 !important;
    color: #f8f9fa;
    border-radius: 10px;
@@ -244,6 +249,35 @@ background-color: #B42789 !important;
     background-color:#B42789 !important;
   }
 
-.imagen {
+/* .imagen {
     width: 100%;
+} */
+
+
+
+
+/* tarjetas informacion */
+#enlace-info{
+    color: #89399D;
+}
+#infotarj{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 8px 32px 0 rgba(88, 88, 93, 0.221);
+    cursor: default;
+    transition: all 400ms ease;
+}
+#infotarj:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0,4);
+    transform: translateY(-3%);
+} 
+
+.info-parrafo{
+    padding-left: 6%;
+    text-align: justify;
 }

@@ -30,9 +30,9 @@ const publicacionesCard = [
   createData(
     3,
     "https://www.svgrepo.com/show/420320/avatar-coffee-cup.svg",
-    "Sr.Burns",
+    "Mr.Burns",
     "Las máquinas touch de pago con tarjeta no consideran a las personas con discapacidad visual",
-    "DEs una máquina NO ACCESIBLE para personas con discapacidad visual, al ser touch las personas con esta y otras discapacidades (motoras), al no ver y tampoco tener control de movimientos precisos deben entregar sus claves a terceros, incapacitando, vulnerando/ violando derechos a una vida autónoma e independiente de las personas con discapacidad.😡",
+    "Es una máquina NO ACCESIBLE para personas con discapacidad visual, al ser touch las personas con esta y otras discapacidades (motoras), al no ver y tampoco tener control de movimientos precisos deben entregar sus claves a terceros, incapacitando, vulnerando/ violando derechos a una vida autónoma e independiente de las personas con discapacidad.😡",
     ["DISCAPACIDAD VISUAL", "ACCESIBILIDAD", "MOTRICIDAD"],
     
 
@@ -52,8 +52,8 @@ const Publicaciones = () => {
     <>
       {publicacionesCard.map((publicacion, index) => (
         <div key={index}>
-          <div className="card cardprincipal">
-            <div className="card-body card-pub ">
+          <div className="card cardprincipal" id="tarjePrincipal" >
+            <div className="card-body" id="tarjeta">
               <img src={publicacion.imagen} alt="" width="40px" height="40px" />
               <span className="usuario ms-2">{publicacion.usuario}</span>
               <h5 className="card-title mt-2">{publicacion.titulo}</h5>
