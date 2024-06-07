@@ -52,8 +52,8 @@ const Publicaciones = () => {
     <>
       {publicacionesCard.map((publicacion, index) => (
         <div key={index}>
-          <div className="card cardprincipal" id="tarjePrincipal" >
-            <div className="card-body" id="tarjeta">
+          <div className="card cardprincipal" id="tarjePublicaciones" >
+            <div className="card-body" id="pubCuerpo">
               <img src={publicacion.imagen} alt="" width="40px" height="40px" />
               <span className="usuario ms-2">{publicacion.usuario}</span>
               <h5 className="card-title mt-2">{publicacion.titulo}</h5>

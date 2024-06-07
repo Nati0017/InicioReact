@@ -26,6 +26,8 @@ const Modal = () => {
       return;
     }
 
+    
+
     // Mostrar la alerta de confirmación usando SweetAlert2
     Swal.fire({
       title: 'Confirmar publicación',
