@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Swal from 'sweetalert2';
 
 const Modal = () => {
-  // Crear estados para los inputs
+  
   const [title, setTitle] = useState('');
   const [message, setMessage] = useState('');
   const [tag, setTag] = useState('');
@@ -26,12 +26,21 @@ const Modal = () => {
       return;
     }
 
-    
+    // Validar longitud del título, mensaje y tag
+    if (title.length < 3 || message.length < 3 || tag.length < 3) {
+      Swal.fire({
+        title: 'Error',
+        text: 'Todos los campos deben tener al menos 3 caracteres',
+        icon: 'error',
+        confirmButtonText: 'OK'
+      });
+      return;
+    }
 
-    // Mostrar la alerta de confirmación usando SweetAlert2
+    // alerta
     Swal.fire({
       title: 'Confirmar publicación',
-      html: `¿Estás seguro de que deseas publicar esto?<br><br><strong>Mensaje:</strong> ${message}<br><strong>Tag:</strong> ${tag}`,
+      html: `¿Estás seguro de que deseas publicar esto?<br><br><strong>Título:</strong> ${title}<br><strong>Mensaje:</strong> ${message}<br><strong>Tag:</strong> ${tag}`,
       icon: 'question',
       showCancelButton: true,
       confirmButtonText: 'Publicar',
@@ -44,14 +53,18 @@ const Modal = () => {
         console.log(title);
         console.log(message);
         console.log(tag);
-        // Limpiar los inputs
-        setTitle('');
-        setMessage('');
-        setTag('');
-        // Otra acción aquí...
-        Swal.fire('Publicado!', 'Tu publicación ha sido publicada.', 'success');
+
+        handleCancelar();
+        
+        Swal.fire('Publicado!', 'Tu publicación ha sido publicada con éxito.', 'success');
       }
     });
+  }
+
+  const handleCancelar = () => {
+    setTitle('');
+    setMessage('');
+    setTag('');
   }
 
   return (
@@ -97,7 +110,7 @@ const Modal = () => {
               </form>
             </div>
             <div className="modal-footer">
-              <button id="boton-cancelar" type="button" className="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button id="boton-cancelar" type="button" className="btn btn-outline-secondary" onClick={handleCancelar} data-bs-dismiss="modal">Cancelar</button>
               <button id="boton-publicar" type="button" className="btn btn-secondary" onClick={handlePublish}>Publicar</button>
             </div>
           </div>
