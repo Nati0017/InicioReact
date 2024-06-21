@@ -1,4 +1,4 @@
-/* body {
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -7,10 +7,10 @@
 .container-fluid{
     padding: 0;
 
-} */
+}
 
 
-/* .navbar {
+ .navbar {
     background-color: #83259bc2; 
     color: rgb(255, 255, 255);
     padding: 15px 20px;
@@ -53,12 +53,12 @@
 
 .create-post:hover {
     background-color: #9a0992 !important;
-} */
+} 
 
 
 
 
-/* .sidebar {
+ .sidebar {
     position: absolute;
     padding: 20px;
     background-color: #ffffff;
@@ -123,9 +123,9 @@
 
 .sidebar-der h5, .sidebar-der h6 {
     margin-bottom: 16px;
-}  */
+}  
 
- /* .sidebar-der h5 {
+  .sidebar-der h5 {
     border-bottom: 3px solid #84259B; 
     padding-bottom: 10px; 
 }
@@ -155,8 +155,8 @@
         padding: 20px ;
         box-shadow: 2px rgba(0, 0, 0, 0.1);
     }
-}  */
-/* 
+}  
+
 
   
    .card-pub {
@@ -164,7 +164,7 @@
     line-height: 1.6;
     text-align: justify;
     margin: auto;
-  }  */
+  }  
 
   @media (max-width: 768px){
      .sidebar-display{
@@ -223,7 +223,7 @@
   }
    */
    #cajabotoncrear{
-    display:contents;
+    padding-left: 1.25rem;
 }
 
  #boton-crear{

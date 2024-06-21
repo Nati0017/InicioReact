@@ -20,7 +20,7 @@ function Columnas () {
                 </div>
 
                 <div className="col-12 col-md-5 col-xl-7 col-xxl-8">
-                    <Crearpub/>
+
                     <Publicaciones/>
                 </div>
 
